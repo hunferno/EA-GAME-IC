@@ -46,9 +46,6 @@ body{
 #nav_bar .menu{
     display: flex;
 }
-#nav_bar .menu li{
-    display: flex;
-}
 #nav_bar .menu a{
     font-size: 1.3em;
     margin-right: 1rem;
@@ -65,10 +62,10 @@ body{
 /* ------------end of navigation section-------- */
 
 /* ------------landing section-------- */
-#landing_section{
+.communStyle{
     width: 100vw;
     height: 100vh;
-    background-image: url(./images/aboutBg.jpeg);
+    background-image: url(../images/image_landing.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -77,18 +74,18 @@ body{
     align-items: center;
     justify-content: center;
 }
-#landing_section h1{
+.communStyle h1{
     font-size: 80px;
     color: rgb(0, 0, 0);
     margin-bottom: 1rem;
     text-shadow:5px 5px #F77F00;
 }
-#landing_section p{
+.communStyle p{
     text-align: center;
     font-size: 40px;
-    color: white;
+    color: rgb(0, 0, 0);
     line-height: 3rem;
-    text-shadow:3px 3px grey;
+    text-shadow:3px 3px #009E60;
 }
 /* ------------end of landing section-------- */
 
@@ -179,3 +176,16 @@ body{
   /* #page-footer {
     display: none !important;
   } */
+  /* ----------------ABOUT------------- */
+  #landing_section2{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/aboutBg.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
