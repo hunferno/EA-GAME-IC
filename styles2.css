@@ -1,3 +1,12 @@
+/*
+Colors:
+
+Text: #1A1A1A
+Green: #00B172
+White: #FFF
+
+*/
+
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700%7CRoboto:100,300,700');
 
 *{
@@ -25,7 +34,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 50px;
 }
 #nav_bar img{
     width: 100%;
@@ -33,7 +42,11 @@ body{
 #nav_bar a{
     width: 5vw;
 }
+
 #nav_bar .menu{
+    display: flex;
+}
+#nav_bar .menu li{
     display: flex;
 }
 #nav_bar .menu a{
@@ -47,7 +60,7 @@ body{
     padding: 3px;
     font-size: 2em;
     margin: 1rem;
-    color: #ff2e63;
+    color: #F77F00;
 }
 /* ------------end of navigation section-------- */
 
@@ -55,7 +68,7 @@ body{
 #landing_section{
     width: 100vw;
     height: 100vh;
-    background-image: url(./images/landing_img.png);
+    background-image: url(./images/aboutBg.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -66,52 +79,18 @@ body{
 }
 #landing_section h1{
     font-size: 80px;
-    color: #FFF;
+    color: rgb(0, 0, 0);
     margin-bottom: 1rem;
+    text-shadow:5px 5px #F77F00;
 }
 #landing_section p{
     text-align: center;
-    font-size: 30px;
-    color: whitesmoke;
+    font-size: 40px;
+    color: white;
     line-height: 3rem;
+    text-shadow:3px 3px grey;
 }
 /* ------------end of landing section-------- */
-
-/* ------------description section-------- */
-#description_section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-#description_section h2{
-    margin: 30px 0 10px;
-    padding-bottom: 3px;
-    border-bottom: 5px solid #08d9d6;
-}
-#description_section .icon_container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-
-}
-#description_section .icon_container .icons{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: calc(100%/3);
-    margin: 30px 20px;
-    text-align: center;
-}
-#description_section .icon_container .icons img{
-    width: 30%;
-}
-.icons h3, .icons p{
-    margin-top: 10px;
-}
-/* ------------end of description section-------- */
 
 /* ------------demo section-------- */
 #demo_section{
