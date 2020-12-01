@@ -8,20 +8,16 @@ app.set("views", __dirname + "/views");
 
 app.set("view engine", "hbs");
 
-app.get("/", (req, res) => {
+app.get(["/", "/index"], (req, res) => {
   res.render("index", {
-    pageTitle: "homepage",
-    css: ["styles.css"],
+    pageTitle: "Home Page",
   });
 });
 
 app.get("/about", (req, res) => {
   res.render("about", {
-    pageTitle: "about my company",
-    css: ["styles2.css"],
+    pageTitle: "About Page",
   });
 });
 
-app.listen(8000, () => {
-  // console.log("server is ready ! http://localhost:8000");
-});
+app.listen(8000, () => {});
