@@ -23,7 +23,7 @@ body{
 /* ------------navigation section-------- */
 #navigation_section{
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     width: 100vw;
     height: 100px;
     background-color: whitesmoke;
@@ -107,7 +107,6 @@ body{
 #latestSoldiers .news{
     border: 1px solid;
     overflow: hidden;
-    width: 100%;
     margin-top: .5rem;
     display: flex;
     justify-content: space-between;
@@ -175,19 +174,40 @@ body{
 
 /* ---------MEDIA QUERIES--------- */
 @media all and (max-width : 768px){
+
     #latestSoldiers .soldiers{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
+    #latestSoldiers .soldiers .news{
+        width: 60%;
+    }
     .text {
         color: #424242;
         font-family: Lato;
         font-size: 40px;
         text-align: center;
-      }
+    }
+    .communStyle h1{
+        font-size: 4rem;
+        color:#F77F00;
+        text-shadow: none;
+        margin: 5rem 0 2rem;
+    }
+    .communStyle p{
+        font-size: 1.6rem;
+        color: whitesmoke;
+        text-shadow: none;
+        font-weight: bolder;
+    }
+    #latestSoldiers h1{
+        color:#009E60;
+        text-shadow: none;
+    }
 }
+
 @media all and (min-width : 768px)and (max-width : 1300px){
     #latestSoldiers .soldiers{
         flex-wrap: wrap;
